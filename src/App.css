@@ -1,0 +1,83 @@
+/*------------------------------*\
+#GOOGLE FONTS
+\*------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@700&family=Poppins:wght@600&display=swap');
+
+/*------------------------------*\
+#CSS VARIABLES
+\*------------------------------*/
+
+:root {
+
+  /*------------------------------*\
+  #color
+  \*------------------------------*/
+
+  --primary-color: #6C63FF;
+  --title-color: #3b35b7;
+  --text-color: #15191e;
+  --white:#fff;
+  --bg-color-tranparent:rgba(108, 99, 255,0.2);
+  --bg-color: #212730;
+  --text-color-alt: #1d222a;
+  --container-color: #e7e6ff;
+
+  --border-color: #b3bdcb;
+  --first-gradient: linear-gradient(180deg, #A635B9 0%, #dda5e7 80%);
+  --second-gradient: linear-gradient(180deg, #E98458 0%, #fff 80%);
+  --third-gradient: linear-gradient(180deg, #6C63FF 0%, #b9b6ff 80%);
+
+  /*------------------------------*\
+  #tyografhy
+  \*------------------------------*/
+
+  --body-font: 'Poppins', sans-serif;
+  --second-font :  'Caveat', cursive;
+  --biggest-font-size:90px;
+   --h1:80px;
+   --h2:44px;
+   --h3:30px;
+   --h4:24px;
+   --h5:22px;
+   --largest:21px;
+   --larger:20px;
+   --large:18px;
+   --normal:16px;
+   --small:15px;
+   --smaller:14px;
+   --tiny:13px;  
+
+   /*------------------------------*\
+   #shadow
+  \*------------------------------*/
+
+  --shadow:0px 20px 20px 3px rgba(33, 39, 48,0.20);
+  --transition:cubic-beizer(0.3,0,0.3,1) ;
+
+}
+*{
+  font-family: var(--body-font);
+  font-weight: 400;
+ 
+}
+.App{
+  color:var(--text-color);
+}
+.button{
+  border-radius: 20px;
+  color:#fff;
+  font-size:var(--normal);
+  border: none;
+  background: var(--third-gradient);
+  box-shadow:var(--shadow);
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover{
+  transform: scale(1.1); 
+  cursor:pointer;
+}
